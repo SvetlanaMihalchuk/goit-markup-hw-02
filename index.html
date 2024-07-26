@@ -4,59 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
-      href="https://cdnjs.com/libraries/modern-normalize"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body class="body">
+    <!-- #region header -->
     <header class="header">
-      <nav>
+      <nav class="navigation">
         <a class="logo" href="./index.html"
           >Web <span class="logo-studio">Studio</span>
         </a>
         <ul>
-          <li><a class="navigation" href="./index.html">Studio</a></li>
-          <li><a class="navigation" href="./index.html">Portfolio</a></li>
-          <li><a class="navigation" href="./index.html">Contacts</a></li>
+          <li><a class="navigation-menu" href="./index.html">Studio</a></li>
+          <li><a class="navigation-menu" href="">Portfolio</a></li>
+          <li><a class="navigation-menu" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address>
+      <address class="address">
         <ul>
           <li>
-            <a class="info" href="mailto:info@devstudio.com"
+            <a class="contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="info" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
     </header>
-
+    <!-- #endregion header -->
     <main>
-      <!-- section hero -->
+      <!-- #region section hero -->
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
       </section>
-
-      <!-- section key decisions -->
-      <section>
-        <h2 style="display: none">Section 1</h2>
+      <!-- #endregion section hero -->
+      <!-- #region section key decisions -->
+      <section class="key-decisions">
+        <h2 style="display: none" class="key-decisions-title">Section 1</h2>
         <ul>
           <li>
             <h3 class="key-decisions-title">Strategy</h3>
-            <p class="key-decisions">
+            <p class="key-decisions-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
@@ -84,10 +96,10 @@
           </li>
         </ul>
       </section>
-
-      <!-- section our team -->
+      <!-- #endregion section key decisions -->
+      <!-- #region section our team -->
       <section class="our-team">
-        <h2>Our Team</h2>
+        <h2 class="our-team-title">Our Team</h2>
         <ul>
           <li>
             <img
@@ -135,10 +147,10 @@
           </li>
         </ul>
       </section>
-
-      <!-- section our portfolio -->
-      <section>
-        <h2>Our Portfolio</h2>
+      <!-- #endregion section our team -->
+      <!-- #region section our portfolio -->
+      <section class="portfolio">
+        <h2 class="portfolio-title">Our Portfolio</h2>
         <ul>
           <li>
             <img
@@ -208,8 +220,9 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion section our portfolio -->
     </main>
-
+    <!-- #region footer -->
     <footer class="footer">
       <a class="logo" href="./index.html"
         >Web <span class="footer-logo-studio">Studio</span>
@@ -219,5 +232,6 @@
         marketing & growth solutions.
       </p>
     </footer>
+    <!-- endregion footer -->
   </body>
 </html>
